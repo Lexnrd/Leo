@@ -1,0 +1,85 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Systems</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/fotos-premium/hermosa-ilustracion-fondo-colorido-humo_265989-17893.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .side-images {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+        }
+        .left-img {
+            left: -200px;
+            animation: slideInLeft 1s forwards;
+        }
+        .right-img {
+            right: -200px;
+            animation: slideInRight 1s forwards;
+        }
+        @keyframes slideInLeft {
+            from { left: -200px; }
+            to { left: 10px; }
+        }
+        @keyframes slideInRight {
+            from { right: -200px; }
+            to { right: 10px; }
+        }
+        .vision, ul {
+            font-size: 18px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .logo {
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpg" alt="Logo Electronic Systems" class="logo">
+        <h1>Electronic Systems</h1>
+        <p class="vision">
+            Nuestra visión es ser la empresa líder en soluciones de seguridad electrónica, ofreciendo instalaciones, mantenimiento y asesoría en videoporteros, alarmas, cámaras de seguridad y sistemas de control de acceso. Nos comprometemos con la innovación y la satisfacción del cliente para garantizar su tranquilidad y protección.
+        </p>
+        <img src="equipos.jpg" alt="Equipos de seguridad electrónica" class="side-images left-img">
+        <img src="equipos.jpg" alt="Equipos de seguridad electrónica" class="side-images right-img">
+        <h2>Nuestros Servicios</h2>
+        <p>
+            En Electronic Systems ofrecemos soluciones avanzadas en seguridad electrónica, incluyendo:
+        </p>
+        <ul>
+            <li><strong>Videoporteros:</strong> Permiten la comunicación visual y auditiva con visitantes antes de permitir el acceso.</li>
+            <li><strong>Alarmas:</strong> Sistemas diseñados para detectar intrusos y alertar a los propietarios o empresas de seguridad.</li>
+            <li><strong>Cámaras de seguridad:</strong> Supervisan y graban imágenes en tiempo real para la vigilancia de espacios.</li>
+            <li><strong>Control de acceso:</strong> Dispositivos electrónicos que regulan quién puede ingresar a determinadas áreas.</li>
+            <li><strong>Mantenimiento:</strong> Servicio técnico especializado para garantizar el funcionamiento óptimo de todos los equipos.</li>
+        </ul>
+    </div>
+</body>
+</html>
